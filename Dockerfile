@@ -1,0 +1,11 @@
+FROM python:3.8-slim
+
+ENV PYLINT_VERSION=2.11.1
+ENV BLACK_VERSION=21.9b0
+ENV FLAKE8_VERSION=3.9.2
+ENV MYPY_VERSION=0.910
+
+RUN pip3 install pylint==$PYLINT_VERSION
+RUN pip3 install black==$BLACK_VERSION
+RUN pip3 install flake8==$FLAKE8_VERSION
+RUN pip3 install mypy==$MYPY_VERSION
